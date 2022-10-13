@@ -1,0 +1,120 @@
+@media (max-width:1400px){
+    .dining_card {
+        width: 94%;
+        margin-right: 20px;
+    }
+}
+@media (max-width:1200px){
+    .dining_card.what_hot {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width:991px){
+    .navbar-collapse .navbar-nav {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .navbar-collapse {
+        background: #f7f7f7;
+        padding: 17px 12px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        border-bottom: 4px solid #D98910;
+    }
+    .header_search {
+        margin-left: auto;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    }
+    .navbar-brand {
+        max-width: 230px;
+    }
+    .header_center {
+        height: fit-content;
+        margin-bottom: 10px;
+    }
+    .dining_card {
+        width: 95%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .dining_card_tittle {
+        font-size: 20px;
+        line-height: 160%;
+    }
+    footer .col-md-4{
+        margin-bottom: 18px;
+    }
+    .top_brands_logo_img {
+        width: 210px !important;
+        margin-right: 40px;
+    }
+    .top_brands_logo_img img {
+        min-width: 140px;
+    }
+    .top_brands_logos {
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
+@media (max-width:767px){
+    footer {
+        background: #333333;
+        padding: 40px 0 65px;
+    }
+    .dining_card {
+        width: 100%;
+    }
+    .dining {
+        padding: 44px 0;
+    }
+    .navbar-brand {
+        max-width: 155px;
+    }
+    .header_center {
+        margin-bottom: 0;
+    }
+    .header_top {
+        padding: 8px 15px;
+    }
+    .header_top_tittle {
+        font-size: 15px;
+    }
+}
+@media (max-width:575px){
+    .dining_card_tittle {
+        font-size: 18px;
+        line-height: 155%;
+    }
+    .who_we_content {
+        font-size: 14px;
+        line-height: 145%;
+    }
+    .who_we_tittle {
+        margin-bottom: 10px;
+    }
+    .what_hots {
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .dining_card_tittle.what_hot {
+        font-size: 18px;
+        line-height: 20px;
+        height: 60px;
+    }
+    .what_hot_tittle {
+        font-family: var(--Moderat-Bold);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 180%;
+        text-transform: uppercase;
+        color: #333333;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+}
