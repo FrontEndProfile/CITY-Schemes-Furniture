@@ -1,267 +1,305 @@
 /* FONT IMPORT  */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* --- LOCAL  */
 @font-face {
-    font-family: 'Moderat-Bold';
-    src: url('Moderat-Bold.eot');
-    src: local('Moderat Bold'), local('Moderat-Bold'),
-        url('../font/Moderat-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/Moderat-Bold.woff2') format('woff2'),
-        url('../font/Moderat-Bold.woff') format('woff'),
-        url('../font/Moderat-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Moderat-Bold";
+  src: url("Moderat-Bold.eot");
+  src: local("Moderat Bold"), local("Moderat-Bold"),
+    url("../font/Moderat-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/Moderat-Bold.woff2") format("woff2"),
+    url("../font/Moderat-Bold.woff") format("woff"),
+    url("../font/Moderat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Moderat';
-    src: url('Moderat-Regular.eot');
-    src: local('Moderat Regular'), local('Moderat-Regular'),
-        url('../font/Moderat-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../font/Moderat-Regular.woff2') format('woff2'),
-        url('../font/Moderat-Regular.woff') format('woff'),
-        url('../font/Moderat-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Moderat";
+  src: url("Moderat-Regular.eot");
+  src: local("Moderat Regular"), local("Moderat-Regular"),
+    url("../font/Moderat-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/Moderat-Regular.woff2") format("woff2"),
+    url("../font/Moderat-Regular.woff") format("woff"),
+    url("../font/Moderat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'Moderat Extended';
-    src: url('Moderat-Extended-Bold.eot');
-    src: local('Moderat Extended Bold'), local('Moderat-Extended-Bold'),
-        url('../font/Moderat-Extended-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/Moderat-Extended-Bold.woff2') format('woff2'),
-        url('../font/Moderat-Extended-Bold.woff') format('woff'),
-        url('../font/Moderat-Extended-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Moderat Extended";
+  src: url("Moderat-Extended-Bold.eot");
+  src: local("Moderat Extended Bold"), local("Moderat-Extended-Bold"),
+    url("../font/Moderat-Extended-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/Moderat-Extended-Bold.woff2") format("woff2"),
+    url("../font/Moderat-Extended-Bold.woff") format("woff"),
+    url("../font/Moderat-Extended-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 :root {
-    --montserrat: 'Montserrat', sans-serif;
-    --Moderat-Bold: 'Moderat-Bold';
-    --Moderat: 'Moderat';
-    --Moderat-Extended: 'Moderat Extended';
-    --base: 16px;
+  --montserrat: "Montserrat", sans-serif;
+  --Moderat-Bold: "Moderat-Bold";
+  --Moderat: "Moderat";
+  --Moderat-Extended: "Moderat Extended";
+  --base: 16px;
+  --black: #333333;
+  --primary: #d98910;
+}
+/* ===== Scrollbar CSS ===== */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--primary) var(--black);
+}
+*::-webkit-scrollbar {
+  width: 4px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--black);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 3px;
+  border: 0px solid var(--black);
 }
 
-
-
-*,body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: var(--Moderat-Bold);
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--Moderat-Bold);
 }
-ul,ol {
-    padding: 0;
-    margin: 0;
+ul,
+ol {
+  padding: 0;
+  margin: 0;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 a:hover {
-    color: #D98910 !important;
+  color: var(--primary) !important;
 }
-h1,h2,h3,h4,h5,h6,p
-.h1,.h2,.h3,.h4,.h5,.h6 {
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
 }
 ::selection {
-    color: #D98910; 
-    background: #D9D9D9;
+  color: var(--primary);
+  background: #d9d9d9;
 }
-
-
-
-
-
 
 /* HEADER TOP */
 .header_top {
-    background: #333333;
-    padding: 11px 15px;
+  background: var(--black);
+  padding: 11px 15px;
 }
 .header_top_tittle {
-    font-family: var(--montserrat);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: capitalize;
-    color: #F2F2F2;
-    text-align: center;
+  font-family: var(--montserrat);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #f2f2f2;
+  text-align: center;
 }
 .header_center {
-    height: 152px;   
-    margin-bottom: 35px;
+  height: 152px;
+  margin-bottom: 35px;
 }
 .navbar-brand {
-    max-width: 311px;
+  max-width: 311px;
 }
 .call_icon {
-    margin-right: 6.5px;
+  margin-right: 6.5px;
 }
 .navbar-collapse .navbar-nav {
-    width: 68%;
-    margin-right: -16px;
-    margin-bottom: 25px;
+  width: 68%;
+  margin-right: -16px;
+  margin-bottom: 25px;
 }
 .header_search {
-    margin-left: auto;
-    position: relative;
-    width: 100%;
-    max-width: 634px;
-    height: 47px;
+  margin-left: auto;
+  position: relative;
+  width: 100%;
+  max-width: 634px;
+  height: 47px;
 }
 .header_search input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-bottom: 1px solid #000;
-    padding: 0px 30px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 0px 30px;
 }
 .header_search button.btn {
-    position: absolute;
-    right: 32px;
-    top: 0;
-    margin: 0;
-    height: 100%;
-    padding: 0 5px;
+  position: absolute;
+  right: 32px;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  padding: 0 5px;
 }
 .header_search button.btn img {
-    width: 26px;
+  width: 26px;
 }
 .header_bottom {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 .header_bottom .navbar-nav .nav-item .nav-link {
-    font-family: var(--Moderat-Extended);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-    color: #4C4C4D;
+  font-family: var(--Moderat-Extended);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #4c4c4d;
 
-    margin-right: 68.1px;
-    padding: 0px;
+  margin-right: 68.1px;
+  padding: 0px;
 }
 
 /* ==== HERO  */
-.hero img{
-    object-fit: cover;
-    object-position: left;
+.hero img {
+  object-fit: cover;
+  object-position: left;
 }
 /* ==== Dining  */
 .dining {
-    padding: 88px 0;
-
+  padding: 88px 0;
 }
 .dining_card {
-    width: 367px;
-    margin-right: 20px;
+  width: 367px;
+  margin-right: 20px;
 }
 .dining_card_img {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in-out;
+}
+.dining_card_img:hover {
+  scale: 1.03;
+  filter: grayscale(70%);
 }
 .dining_card_tittle {
-    font-family: var(--Moderat-Bold);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 200%;
-    text-transform: uppercase;
-    font-feature-settings: 'kern' off;
-    color: #000000;
+  font-family: var(--Moderat-Bold);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 200%;
+  text-transform: uppercase;
+  font-feature-settings: "kern" off;
+  color: #000000;
 }
 .what_hots {
-    padding: 0;
-    margin-bottom: 76px;
+  padding: 0;
+  margin-bottom: 76px;
 }
 .what_hot_tittle {
-    font-family: var(--Moderat-Bold);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 200%;
-    text-transform: uppercase;
-    color: #333333;
-    text-align: center;
-    margin-bottom: 22px;
+  font-family: var(--Moderat-Bold);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 200%;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 22px;
 }
 .dining_card.what_hot {
-    text-align: center;
-    width: 258px;
-    margin-right: 17px;
-    border-bottom: 1px solid #333333;
-
+  text-align: center;
+  width: 258px;
+  margin-right: 17px;
+  border-bottom: 1px solid var(--black);
 }
 .dining_card_tittle.what_hot {
-    font-family: 'Moderat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 25px;
-    text-transform: lowercase;
-    color: #333333;
-    height: 94px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: "Moderat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  text-transform: lowercase;
+  color: var(--black);
+  height: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .dining_card_img.what_hot {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
+.dining_card_img.what_hot:hover {
+  scale: 1;
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.2) 0px 30px 60px -30px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
 
 .who_we {
-    margin-bottom: 90px;
+  margin-bottom: 90px;
 }
 .who_we_tittle {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 .who_we_content {
-    font-family: var(--Moderat);
-    font-style: normal;
-    font-weight: 400;
-    font-size: var(--base);
-    line-height: 200%;
-    color: #000000;
+  font-family: var(--Moderat);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--base);
+  line-height: 200%;
+  color: #000000;
 }
 .who_we_content a {
-    color: #D98910;
+  color: var(--primary);
 }
 .top_brands_logos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 footer {
-    background: #333333;
-    padding: 67px 0 123px;
+  background: var(--black);
+  padding: 67px 0 123px;
 }
 .menu_tittle {
-    font-family: var(--montserrat);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: #EFEFF3;
-    margin-bottom: 5px;
+  font-family: var(--montserrat);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #efeff3;
+  margin-bottom: 5px;
 }
 .menu_links a {
-    font-family: var(--montserrat);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: #EFEFF3;
+  font-family: var(--montserrat);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #efeff3;
 }
 .menu_tittle.links {
-    margin-top: 42px;
-    margin-bottom: 18px;
+  margin-top: 42px;
+  margin-bottom: 18px;
 }
 .links_icons {
-    margin-right: 27.5px;
+  margin-right: 27.5px;
+}
+.top_brands_logos .top_brands_logo_img {
+  transition: 0.3s ease-in-out;
+}
+.top_brands_logos .top_brands_logo_img:hover {
+  scale: 1.03;
 }
