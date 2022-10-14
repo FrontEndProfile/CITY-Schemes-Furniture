@@ -94,15 +94,8 @@
   .header_search button.btn {
     right: 15px;
   }
-  .hero {
+  .swiper-slide img {
     height: 400px;
-    background: #f7f7f7;
-    background-image: url(../img/banner.webp);
-    background-size: cover;
-    background-position: left;
-  }
-  .hero .container-fluid.g-0 {
-    display: none;
   }
 }
 @media (max-width: 575px) {
@@ -135,9 +128,8 @@
     text-align: center;
     margin-bottom: 22px;
   }
-  .hero {
+  .swiper-slide img {
     height: 333px;
-    transition: 0.3s all;
   }
   .menu_tittle.links {
     margin-top: 17px;

@@ -303,3 +303,7 @@ footer {
 .top_brands_logos .top_brands_logo_img:hover {
   scale: 1.03;
 }
+.swiper-slide img {
+  object-fit: cover;
+  object-position: left;
+}
